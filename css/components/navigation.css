@@ -1,0 +1,30 @@
+[data-theme="light"] .site-header {
+    background: rgba(255, 248, 240, 0.85);
+    border-bottom-color: rgba(156, 102, 68, 0.15);
+}
+
+[data-theme="light"] .site-header.scrolled {
+    background: rgba(255, 248, 240, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .nav-link {
+    color: #6b5b4e;
+}
+
+[data-theme="light"] .nav-link:hover {
+    color: #3a2f26;
+    background: rgba(156, 102, 68, 0.06);
+}
+
+[data-theme="light"] .nav-link.active {
+    color: var(--color-accent);
+}
+
+[data-theme="light"] .hamburger-line {
+    background: #3a2f26;
+}
+
+[data-theme="light"] .header-nav {
+    background: #fff8f0;
+}

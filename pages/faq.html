@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preguntas frecuentes de El Rincón Artesanal. Envíos, pagos, personalización, cuidados y más.">
+    <title>Preguntas frecuentes – El Rincón Artesanal</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components/navigation.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/pages/faq.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main>
+        <section class="faq-hero" aria-labelledby="faq-hero-title">
+            <div class="faq-hero-overlay"></div>
+            <div class="container faq-hero-content reveal">
+                <span class="section-tag">Ayuda</span>
+                <h1 id="faq-hero-title">Preguntas frecuentes</h1>
+                <p class="faq-hero-sub">Encuentra respuestas rápidas sobre nuestros productos, envíos y servicios.</p>
+                <div class="faq-search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                    </svg>
+                    <input type="text" id="faq-search-input" placeholder="Buscar en preguntas..." aria-label="Buscar preguntas frecuentes" autocomplete="off">
+                </div>
+                <p id="faq-no-results" class="faq-no-results" style="display:none;">No se encontraron preguntas. Prueba con otros términos.</p>
+            </div>
+            <div class="faq-hero-wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                    <path fill="var(--color-bg)" d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="faq-content container" aria-labelledby="faq-content-title">
+            <div class="section-header reveal">
+                <span class="section-tag">Todo lo que necesitas saber</span>
+                <h2 id="faq-content-title">Respuestas a tus dudas</h2>
+            </div>
+
+            <div class="faq-categories reveal" id="faq-categories">
+                <button class="cat-btn active" data-cat="all">Todas</button>
+                <button class="cat-btn" data-cat="envios">Envíos</button>
+                <button class="cat-btn" data-cat="pagos">Pagos</button>
+                <button class="cat-btn" data-cat="productos">Productos</button>
+                <button class="cat-btn" data-cat="personalizacion">Personalización</button>
+                <button class="cat-btn" data-cat="cuidados">Cuidados</button>
+            </div>
+
+            <div class="faq-list" id="faq-list">
+                <div class="faq-item reveal" data-cat="envios">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Realizan envíos a toda Cuba?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Sí, coordinamos envíos a todas las provincias mediante agencias de paquetería confiables. El costo depende del destino y del peso del paquete. Te informaremos el precio exacto antes de confirmar el pedido.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="envios">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cuánto tarda en llegar mi pedido?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Dependiendo del destino, los envíos suelen tardar entre 3 y 7 días hábiles. Las entregas en La Habana pueden coordinarse para el mismo día o al siguiente.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="envios">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué agencia de paquetería utilizan?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Trabajamos con varias agencias locales, elegimos la más conveniente según el destino y el tipo de pieza. Podemos adaptarnos a tu preferencia si tienes alguna agencia de confianza.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="envios">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Las piezas van protegidas durante el envío?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Sí, embalamos cada pieza cuidadosamente con material acolchado y cajas resistentes. Hacemos todo lo posible para que lleguen en perfecto estado. Si ocurre algún daño, contáctanos de inmediato.</p></div>
+                </div>
+
+                <div class="faq-item reveal" data-cat="pagos">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué métodos de pago aceptan?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Aceptamos Transfermóvil, EnZona y pago en efectivo al recibir el pedido (en La Habana). Pronto añadiremos más opciones.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="pagos">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Puedo pagar al recibir en otras provincias?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Para envíos fuera de La Habana, el pago se realiza por adelantado mediante Transfermóvil o EnZona. Esto nos permite asegurar la transacción antes de despachar.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="pagos">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Ofrecen descuentos por cantidad?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Sí, a partir de 5 unidades iguales aplicamos un 10% de descuento y desde 10 unidades un 15%. Para pedidos al por mayor, contáctanos directamente.</p></div>
+                </div>
+
+                <div class="faq-item reveal" data-cat="productos">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿De qué material están hechas las piezas?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Todas nuestras piezas son de barro cocido artesanalmente. Usamos barro de la región, seleccionado por su pureza y plasticidad.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="productos">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Las macetas tienen orificio de drenaje?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>La mayoría de nuestras macetas incluyen orificio de drenaje. Si necesitas una sin orificio o con uno adicional, podemos personalizarla sin costo extra.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="productos">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Las piezas pueden usarse en exteriores?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Sí, nuestras piezas soportan condiciones exteriores siempre que se eviten cambios bruscos de temperatura. Recomendamos aplicar un sellador si estarán expuestas constantemente a la intemperie.</p></div>
+                </div>
+
+                <div class="faq-item reveal" data-cat="personalizacion">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Puedo pedir una pieza a medida?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>¡Claro! Creamos piezas personalizadas según tus especificaciones de tamaño, forma, color y acabado. Contáctanos y cuéntanos tu idea.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="personalizacion">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cuánto tiempo toma un pedido personalizado?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Depende de la complejidad. Una pieza estándar puede estar lista en 5-7 días; trabajos más elaborados pueden requerir 2 semanas. Te confirmaremos el plazo al hacer el encargo.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="personalizacion">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Hacen pedidos para bodas o eventos?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Sí, realizamos lotes especiales para bodas, eventos corporativos y regalos empresariales. Ofrecemos condiciones especiales para cantidades grandes. Contáctanos con anticipación.</p></div>
+                </div>
+
+                <div class="faq-item reveal" data-cat="cuidados">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cómo limpio mis piezas de barro?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Límpialas con agua tibia y jabón neutro, usando un paño suave. Evita estropajos abrasivos y productos químicos fuertes. Seca completamente antes de almacenar.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="cuidados">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Puedo meter mis macetas al horno o microondas?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>No recomendamos usar nuestras macetas en horno ni microondas, ya que están diseñadas para uso decorativo o de jardinería. Podrían dañarse con calor extremo adicional.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="cuidados">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Son aptas para alimentos?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Nuestras piezas están pensadas principalmente para decoración y jardinería. Algunas pueden ser aptas para alimentos (fuentes, platos), pero consulta primero para asegurarte del esmaltado adecuado.</p></div>
+                </div>
+                <div class="faq-item reveal" data-cat="cuidados">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué hago si mi maceta se agrieta?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Las grietas finas pueden repararse con adhesivos epóxicos o masillas especiales para cerámica. Si la pieza es reciente y se dañó sin uso inadecuado, contáctanos para evaluar una reposición.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-cta" aria-labelledby="faq-cta-title">
+            <div class="faq-cta-overlay"></div>
+            <div class="container faq-cta-content reveal">
+                <h2 id="faq-cta-title">¿No encontraste tu respuesta?</h2>
+                <p>Contáctanos directamente por WhatsApp, teléfono o mediante nuestro formulario. Estaremos encantados de ayudarte.</p>
+                <div class="faq-cta-actions">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Ir a contacto</a>
+                    <a href="https://wa.me/5356252842" target="_blank" rel="noopener" class="btn btn-outline btn-lg">WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/components/navigation.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/pages/faq.js"></script>
+</body>
+</html>

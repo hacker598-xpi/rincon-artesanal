@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo completo de piezas de barro artesanales – El Rincón Artesanal. Filtra, busca y elige tu próxima obra de arte.">
+    <title>Catálogo – El Rincón Artesanal</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components/navigation.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/pages/products.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main class="container">
+        <div class="products-header reveal">
+            <h1>Nuestras piezas</h1>
+            <p class="products-subtitle">Explora el catálogo completo y encuentra la pieza perfecta para tu espacio.</p>
+        </div>
+
+        <div class="products-toolbar" id="products-toolbar">
+            <div class="toolbar-row">
+                <div class="search-wrapper">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                    </svg>
+                    <input type="text" id="search-input" placeholder="Buscar pieza..." aria-label="Buscar productos" autocomplete="off">
+                </div>
+
+                <div class="filters-group">
+                    <select id="filter-category" aria-label="Filtrar por categoría">
+                        <option value="">Todas las categorías</option>
+                    </select>
+                    <select id="filter-style" aria-label="Filtrar por estilo">
+                        <option value="">Todos los estilos</option>
+                    </select>
+                    <select id="filter-size" aria-label="Filtrar por tamaño">
+                        <option value="">Todos los tamaños</option>
+                    </select>
+                    <select id="sort-order" aria-label="Ordenar productos">
+                        <option value="default">Destacados</option>
+                        <option value="price-asc">Precio: menor a mayor</option>
+                        <option value="price-desc">Precio: mayor a menor</option>
+                        <option value="name-asc">Nombre: A-Z</option>
+                        <option value="name-desc">Nombre: Z-A</option>
+                    </select>
+                </div>
+
+                <div class="toolbar-actions">
+                    <span id="results-count" class="results-count" aria-live="polite"></span>
+                    <button id="clear-filters" class="btn btn-outline btn-small" aria-label="Limpiar todos los filtros">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+                        Limpiar
+                    </button>
+                </div>
+            </div>
+
+            <div id="assistant-container" class="assistant-container">
+                <button id="start-assistant" class="btn btn-outline" onclick="toggleAssistant()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <span id="assistant-btn-text">Asistente de selección</span>
+                </button>
+                <div id="assistant-content" class="assistant-content" style="display:none;"></div>
+            </div>
+        </div>
+
+        <div id="all-products" class="products-grid"></div>
+
+        <div id="no-results" class="no-results" style="display:none;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <h2>Ninguna pieza coincide</h2>
+            <p>Intenta con otros filtros o palabras clave.</p>
+            <button id="clear-filters-empty" class="btn btn-outline">Mostrar todas las piezas</button>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/assistant.js"></script>
+    <script src="../js/components/navigation.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/pages/products.js"></script>
+</body>
+</html>

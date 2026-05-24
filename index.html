@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El Rincón Artesanal – Piezas de barro hechas a mano en Cuba. Compras por WhatsApp y SMS. Tradición, calidad y diseño único.">
+    <title>El Rincón Artesanal – Inicio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/navigation.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero-content container">
+                <div class="hero-badge animate-fade-in">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                    </svg>
+                    <span>Tradición desde 2019</span>
+                </div>
+                <h1 id="hero-title" class="hero-title animate-slide-up">El Rincón<br>Artesanal</h1>
+                <p class="hero-subtitle animate-slide-up delay-200">
+                    Piezas de barro únicas, moldeadas a mano con el alma de la tierra cubana.
+                    Lleva a tu hogar la autenticidad de lo artesanal.
+                </p>
+                <div class="hero-actions animate-slide-up delay-400">
+                    <a href="pages/products.html" class="btn btn-primary btn-lg">Ver catálogo</a>
+                    <a href="pages/contact.html" class="btn btn-outline btn-lg">Contáctanos</a>
+                </div>
+                <div class="hero-scroll animate-fade-in delay-600" aria-hidden="true">
+                    <span>Descubre más</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="hero-wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path fill="var(--color-bg)" d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="intro" aria-labelledby="intro-title">
+            <div class="container intro-grid">
+                <div class="intro-visual reveal">
+                    <div class="intro-image-frame">
+                        <img src="assets/images/team/taller-manuel.webp" alt="Taller de alfarería artesanal" loading="lazy">
+                        <div class="intro-accent"></div>
+                    </div>
+                </div>
+                <div class="intro-text reveal">
+                    <span class="section-tag">Nuestra esencia</span>
+                    <h2 id="intro-title">Arte que nace del barro</h2>
+                    <p class="intro-desc">
+                        En El Rincón Artesanal cada pieza cuenta una historia. Trabajamos con barro de la región, 
+                        técnicas perfeccionadas y un profundo respeto por la tradición alfarera cubana. 
+                        Desde macetas hasta jarrones, cada creación es única, funcional y lleva impresa 
+                        la dedicación de manos artesanas.
+                    </p>
+                    <div class="intro-features">
+                        <div class="intro-feature">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <span>Hecho a mano</span>
+                        </div>
+                        <div class="intro-feature">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <span>Calidad garantizada</span>
+                        </div>
+                    </div>
+                    <a href="pages/about.html" class="btn btn-outline">Conoce nuestra historia</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured" aria-labelledby="featured-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Catálogo destacado</span>
+                    <h2 id="featured-title">Nuestras piezas más queridas</h2>
+                    <p class="section-subtitle">Descubre la selección de productos que nuestros clientes eligen una y otra vez.</p>
+                </div>
+                <div id="featured-list" class="products-grid reveal"></div>
+                <div class="featured-action reveal">
+                    <a href="pages/products.html" class="btn btn-outline btn-lg">Ver todos los productos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Lo que ofrecemos</span>
+                    <h2 id="services-title">Servicios artesanales</h2>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card reveal" tabindex="0">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>Pedidos personalizados</h3>
+                        <p>¿Buscas algo especial? Creamos piezas a medida: bodas, restaurantes, decoración de interiores. Tú defines tamaño, color y diseño.</p>
+                        <a href="pages/services.html" class="service-link">Más información →</a>
+                    </article>
+                    <article class="service-card reveal" tabindex="0">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                                <rect x="1" y="3" width="15" height="13"/><polyline points="16 8 20 8 23 11 23 16 16 16"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+                            </svg>
+                        </div>
+                        <h3>Envíos a toda Cuba</h3>
+                        <p>Coordinamos entregas seguras a cualquier provincia mediante agencias de paquetería. Embalaje profesional para que todo llegue perfecto.</p>
+                        <a href="pages/services.html" class="service-link">Más información →</a>
+                    </article>
+                    <article class="service-card reveal" tabindex="0">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Revendedores</h3>
+                        <p>Condiciones especiales para emprendedores. Precios por volumen y atención personalizada para que tu negocio crezca con nuestras piezas.</p>
+                        <a href="pages/services.html" class="service-link">Más información →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-mini" aria-labelledby="process-mini-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Del barro a tu hogar</span>
+                    <h2 id="process-mini-title">Cómo trabajamos</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step reveal">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a8 8 0 0 0 0 16"/></svg>
+                        </div>
+                        <h4>Selección y preparación</h4>
+                        <p>Elegimos barro local de calidad y lo preparamos para lograr la textura ideal.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="2" width="14" height="6" rx="2"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+                        </div>
+                        <h4>Moldeado artesanal</h4>
+                        <p>Damos forma a cada pieza a mano, respetando el diseño y la tradición.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                        </div>
+                        <h4>Horneado en leña</h4>
+                        <p>El fuego tradicional transforma el barro en cerámica resistente y única.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M12 8v3"/><path d="M8 14c0 3 4 6 4 6s4-3 4-6-4-2-4-2-4-1-4 2z"/></svg>
+                        </div>
+                        <h4>Decoración final</h4>
+                        <p>Aplicamos esmaltes, pinturas y detalles que hacen a cada obra irrepetible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Clientes felices</span>
+                    <h2 id="testimonials-title">Testimonios</h2>
+                </div>
+                <div class="testimonials-slider reveal">
+                    <div class="testimonials-track" id="testimonials-track">
+                        <blockquote class="testimonial-card active" tabindex="0">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p>"Compré un juego de macetas para mi restaurante y quedaron espectaculares. La calidad del barro y el acabado rústico es justo lo que buscaba."</p>
+                            <footer>
+                                <strong>María Elena G.</strong>
+                                <span>Restaurante La Casona, La Habana</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="testimonial-card" tabindex="0">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p>"Encargué una fuente de barro personalizada para mi jardín. El equipo escuchó cada detalle y el resultado superó mis expectativas."</p>
+                            <footer>
+                                <strong>Roberto C.</strong>
+                                <span>Cliente particular, Matanzas</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="testimonial-card" tabindex="0">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p>"Soy revendedora y trabajo con El Rincón Artesanal desde hace dos años. Las piezas se venden solas. La atención es excelente."</p>
+                            <footer>
+                                <strong>Ana Luisa P.</strong>
+                                <span>Emprendedora, Santiago de Cuba</span>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="testimonials-controls">
+                        <button class="testimonial-dot active" data-index="0" aria-label="Testimonio 1"></button>
+                        <button class="testimonial-dot" data-index="1" aria-label="Testimonio 2"></button>
+                        <button class="testimonial-dot" data-index="2" aria-label="Testimonio 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats" aria-labelledby="stats-title">
+            <div class="container">
+                <div class="stats-grid reveal">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="6">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="200000">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Piezas creadas</span>
+                    </div>
+                    <div class="stat-item">
+    <span class="stat-number-group">
+                        <span class="stat-number" data-target="98">0</span><span class="stat-percent">%</span>
+                        </span>
+                        <span class="stat-plus" style="display: block; font-size: 2.2rem; font-weight: 700; color: var(--color-primary); line-height: 1.2; margin-top: -0.4rem; opacity: 0; transition: opacity 0.6s ease 0.3s;">+</span>
+                        <span class="stat-label">Clientes satisfechos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="25">0</span>
+                        <span class="stat-label">Tipos de productos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner" aria-labelledby="cta-banner-title">
+            <div class="cta-banner-overlay"></div>
+            <div class="container cta-banner-content reveal">
+                <h2 id="cta-banner-title">¿Listo para tener una pieza única?</h2>
+                <p>Cada creación de El Rincón Artesanal es una obra irrepetible. Contáctanos por WhatsApp y cuéntanos tu idea.</p>
+                <div class="cta-banner-actions">
+                    <a href="pages/contact.html" class="btn btn-primary btn-lg">Contactar ahora</a>
+                    <a href="https://wa.me/5356252842" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">WhatsApp directo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/components/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pages/home.js"></script>
+</body>
+</html>

@@ -50,6 +50,10 @@
     text-align: center;
     padding: 6rem 2rem;
 }
+
+[data-theme="light"] .hero {
+    background: linear-gradient(160deg, #f5f4f2 0%, #ebe9e4 30%, #e3e0d8 60%, #faf9f7 100%);
+}
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -394,6 +398,10 @@
     padding: 5rem 0;
     background: linear-gradient(160deg, #1f1a16 0%, var(--color-bg) 50%, #1f1a16 100%);
 }
+
+[data-theme="light"] .testimonials {
+    background: linear-gradient(160deg, #e8e6e1 0%, var(--color-bg) 50%, #e8e6e1 100%);
+}
 .testimonials-slider {
     max-width: 700px;
     margin: 0 auto;
@@ -485,6 +493,10 @@
     position: relative;
     overflow: hidden;
 }
+
+[data-theme="light"] .stats {
+    background: linear-gradient(160deg, var(--color-bg) 0%, #e8e6e1 100%);
+}
 .stats::before {
     content: '';
     position: absolute;
@@ -538,6 +550,10 @@
     text-align: center;
     background: linear-gradient(160deg, #2b1f16 0%, #1a1512 100%);
     overflow: hidden;
+}
+
+[data-theme="light"] .cta-banner {
+    background: linear-gradient(160deg, #e3e0d8 0%, #d5d2cb 100%);
 }
 .cta-banner-overlay {
     position: absolute;

@@ -27,6 +27,7 @@
   font-display: swap;
 }
 
+/* Tema oscuro (por defecto) */
 :root {
   --color-bg: #1e1a17;
   --color-surface: #2b2520;
@@ -38,11 +39,33 @@
   --color-border: #4a3f38;
   --color-card-bg: #2b2520;
   --color-shadow: rgba(0,0,0,0.3);
+  --color-input-bg: #2b2520;
+  --color-input-border: #4a3f38;
+  --color-muted: #6b5e52;
+  --color-overlay: rgba(0, 0, 0, 0.5);
 
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Lato', 'Segoe UI', sans-serif;
   --radius: 0.5rem;
   --transition: 0.3s ease;
+}
+
+/* Tema claro */
+[data-theme="light"] {
+  --color-bg: #faf9f7;
+  --color-surface: #ffffff;
+  --color-text: #2d2a26;
+  --color-text-secondary: #6b6358;
+  --color-primary: #c7925a;
+  --color-primary-hover: #b07d4a;
+  --color-accent: #d4a76e;
+  --color-border: #e5dfd8;
+  --color-card-bg: #ffffff;
+  --color-shadow: rgba(0,0,0,0.08);
+  --color-input-bg: #ffffff;
+  --color-input-border: #d5cfc9;
+  --color-muted: #a89f94;
+  --color-overlay: rgba(0, 0, 0, 0.4);
 }
 
 *, *::before, *::after {
@@ -172,4 +195,56 @@ img {
 
 html, body {
   overflow-x: hidden;
+}
+
+/* Estilos para inputs y formularios */
+input, textarea, select {
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-input-border);
+  color: var(--color-text);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(199, 146, 90, 0.15);
+}
+
+/* Estilos para tablas */
+table {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+th, td {
+  border-color: var(--color-border);
+}
+
+/* Estilos para blockquote y citas */
+blockquote {
+  border-left-color: var(--color-primary);
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+}
+
+/* Estilos para código en línea */
+code {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+/* Estilos para hr */
+hr {
+  border-color: var(--color-border);
+}
+
+/* Transición suave al cambiar de tema */
+body, .site-header, .site-footer, 
+.card, .product-card, .service-card,
+.btn, input, textarea, select {
+  transition: background-color var(--transition), 
+              color var(--transition), 
+              border-color var(--transition),
+              box-shadow var(--transition);
 }

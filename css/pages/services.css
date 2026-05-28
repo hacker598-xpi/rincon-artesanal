@@ -39,6 +39,10 @@
     background: linear-gradient(160deg, #1a1512 0%, #2b1f16 30%, #3a2517 60%, #1e1a17 100%);
     overflow: hidden;
 }
+
+[data-theme="light"] .services-hero {
+    background: linear-gradient(160deg, #fff8f0 0%, #f5ebe0 30%, #ebd9c9 60%, #fff8f0 100%);
+}
 .services-hero-overlay {
     position: absolute;
     inset: 0;

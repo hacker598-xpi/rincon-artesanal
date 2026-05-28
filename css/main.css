@@ -45,6 +45,19 @@
   --transition: 0.3s ease;
 }
 
+[data-theme="light"] {
+  --color-bg: #fff8f0;
+  --color-surface: #ffffff;
+  --color-text: #3a2f26;
+  --color-text-secondary: #6b5b4e;
+  --color-primary: #9c6644;
+  --color-primary-hover: #b57b52;
+  --color-accent: #c7925a;
+  --color-border: #e0d5c9;
+  --color-card-bg: #ffffff;
+  --color-shadow: rgba(0,0,0,0.08);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }

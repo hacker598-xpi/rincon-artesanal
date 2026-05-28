@@ -50,6 +50,10 @@
     text-align: center;
     padding: 6rem 2rem;
 }
+
+[data-theme="light"] .hero {
+    background: linear-gradient(160deg, #fff8f0 0%, #f5ebe0 30%, #ebd9c9 60%, #fff8f0 100%);
+}
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -131,12 +135,21 @@
     margin: 0 0 1.5rem;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
+
+[data-theme="light"] .hero-title {
+    color: #3a2f26;
+    text-shadow: none;
+}
 .hero-subtitle {
     font-size: 1.15rem;
     color: rgba(237, 224, 212, 0.85);
     max-width: 600px;
     margin: 0 auto 2.5rem;
     line-height: 1.75;
+}
+
+[data-theme="light"] .hero-subtitle {
+    color: rgba(58, 47, 38, 0.85);
 }
 .hero-actions {
     display: flex;
@@ -539,6 +552,10 @@
     background: linear-gradient(160deg, #2b1f16 0%, #1a1512 100%);
     overflow: hidden;
 }
+
+[data-theme="light"] .cta-banner {
+    background: linear-gradient(160deg, #f5ebe0 0%, #ebd9c9 100%);
+}
 .cta-banner-overlay {
     position: absolute;
     inset: 0;
@@ -560,11 +577,19 @@
     color: #fff;
     margin: 0 0 1rem;
 }
+
+[data-theme="light"] .cta-banner-content h2 {
+    color: #3a2f26;
+}
 .cta-banner-content p {
     font-size: 1.15rem;
     color: rgba(237, 224, 212, 0.8);
     margin: 0 0 2.5rem;
     line-height: 1.7;
+}
+
+[data-theme="light"] .cta-banner-content p {
+    color: rgba(58, 47, 38, 0.8);
 }
 .cta-banner-actions {
     display: flex;

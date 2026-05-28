@@ -50,6 +50,10 @@
     text-align: center;
     padding: 6rem 2rem;
 }
+
+[data-theme="light"] .about-hero {
+    background: linear-gradient(160deg, #fff8f0 0%, #f5ebe0 30%, #ebd9c9 60%, #fff8f0 100%);
+}
 .about-hero-overlay {
     position: absolute;
     inset: 0;
@@ -132,6 +136,11 @@
     margin: 0 0 1.5rem;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
+
+[data-theme="light"] .about-hero-title {
+    color: #3a2f26;
+    text-shadow: none;
+}
 .about-hero-title br {
     display: block;
 }
@@ -141,6 +150,10 @@
     max-width: 650px;
     margin: 0 auto 2.5rem;
     line-height: 1.75;
+}
+
+[data-theme="light"] .about-hero-subtitle {
+    color: rgba(58, 47, 38, 0.85);
 }
 .about-hero-actions {
     display: flex;
@@ -751,6 +764,10 @@
     background: linear-gradient(160deg, #2b1f16 0%, #1a1512 100%);
     overflow: hidden;
 }
+
+[data-theme="light"] .about-cta {
+    background: linear-gradient(160deg, #f5ebe0 0%, #ebd9c9 100%);
+}
 .about-cta-overlay {
     position: absolute;
     inset: 0;
@@ -769,11 +786,19 @@
     color: #fff;
     margin: 0 0 1rem;
 }
+
+[data-theme="light"] .about-cta-content h2 {
+    color: #3a2f26;
+}
 .about-cta-content p {
     font-size: 1.15rem;
     color: rgba(237, 224, 212, 0.8);
     margin: 0 0 2.5rem;
     line-height: 1.7;
+}
+
+[data-theme="light"] .about-cta-content p {
+    color: rgba(58, 47, 38, 0.8);
 }
 .about-cta-actions {
     display: flex;

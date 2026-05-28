@@ -50,6 +50,10 @@
     text-align: center;
     padding: 6rem 2rem;
 }
+
+[data-theme="light"] .hero {
+    background: linear-gradient(160deg, #f5f4f2 0%, #ebe9e4 30%, #e3e0d8 60%, #faf9f7 100%);
+}
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -126,14 +130,14 @@
 .hero-title {
     font-size: clamp(3rem, 6vw, 5rem);
     font-family: var(--font-heading);
-    color: #fff;
+    color: var(--color-text);
     line-height: 1.1;
     margin: 0 0 1.5rem;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 .hero-subtitle {
     font-size: 1.15rem;
-    color: rgba(237, 224, 212, 0.85);
+    color: var(--color-text-secondary);
     max-width: 600px;
     margin: 0 auto 2.5rem;
     line-height: 1.75;
@@ -154,7 +158,8 @@
     flex-direction: column;
     align-items: center;
     gap: 0.4rem;
-    color: rgba(237, 224, 212, 0.5);
+    color: var(--color-text-secondary);
+    opacity: 0.6;
     font-size: 0.8rem;
     animation: bounce-down 2s infinite;
 }
@@ -394,6 +399,10 @@
     padding: 5rem 0;
     background: linear-gradient(160deg, #1f1a16 0%, var(--color-bg) 50%, #1f1a16 100%);
 }
+
+[data-theme="light"] .testimonials {
+    background: linear-gradient(160deg, #e8e6e1 0%, var(--color-bg) 50%, #e8e6e1 100%);
+}
 .testimonials-slider {
     max-width: 700px;
     margin: 0 auto;
@@ -485,6 +494,10 @@
     position: relative;
     overflow: hidden;
 }
+
+[data-theme="light"] .stats {
+    background: linear-gradient(160deg, var(--color-bg) 0%, #e8e6e1 100%);
+}
 .stats::before {
     content: '';
     position: absolute;
@@ -539,6 +552,10 @@
     background: linear-gradient(160deg, #2b1f16 0%, #1a1512 100%);
     overflow: hidden;
 }
+
+[data-theme="light"] .cta-banner {
+    background: linear-gradient(160deg, #e3e0d8 0%, #d5d2cb 100%);
+}
 .cta-banner-overlay {
     position: absolute;
     inset: 0;
@@ -557,12 +574,12 @@
 }
 .cta-banner-content h2 {
     font-size: 2.8rem;
-    color: #fff;
+    color: var(--color-text);
     margin: 0 0 1rem;
 }
 .cta-banner-content p {
     font-size: 1.15rem;
-    color: rgba(237, 224, 212, 0.8);
+    color: var(--color-text-secondary);
     margin: 0 0 2.5rem;
     line-height: 1.7;
 }

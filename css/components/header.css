@@ -10,9 +10,19 @@
     font-family: var(--font-body);
 }
 
+[data-theme="light"] .site-header {
+    background: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid rgba(199, 146, 90, 0.2);
+}
+
 .site-header.scrolled {
     background: rgba(30, 26, 23, 0.95);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] .site-header.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {

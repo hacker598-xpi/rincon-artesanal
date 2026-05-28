@@ -53,11 +53,11 @@
 .contact-hero-content h1 {
     font-size: 3.5rem;
     margin: 0.5rem 0 1rem;
-    color: #fff;
+    color: var(--color-text);
 }
 .contact-hero-content p {
     font-size: 1.15rem;
-    color: rgba(237, 224, 212, 0.8);
+    color: var(--color-text-secondary);
     line-height: 1.7;
 }
 .contact-hero-wave {
@@ -325,12 +325,12 @@
 }
 .contact-cta-content h2 {
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--color-text);
     margin: 0 0 1rem;
 }
 .contact-cta-content p {
     font-size: 1.15rem;
-    color: rgba(237, 224, 212, 0.8);
+    color: var(--color-text-secondary);
     margin-bottom: 2rem;
 }
 

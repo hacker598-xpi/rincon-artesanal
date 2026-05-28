@@ -53,12 +53,12 @@
 }
 .services-hero-content h1 {
     font-size: 3rem;
-    color: #fff;
+    color: var(--color-text);
     margin: 0.5rem 0 1rem;
 }
 .services-hero-sub {
     font-size: 1.15rem;
-    color: rgba(237, 224, 212, 0.8);
+    color: var(--color-text-secondary);
 }
 .services-hero-wave {
     position: absolute;
